@@ -1,16 +1,14 @@
-## What We're Building
-
-https://codetricity.github.io/animation-tutorial/
+# Lesson 2
 
 ## Steps
 
-1. Blank screen
-    `var game = new Phaser.Game(600, 480);`
-1. Create `GameState` object to hold template methods - init, preload, create, update
-1. add GameState to game (`game.state.add`)
-1. start GameState (`game.state.start`)
-1. load spritesheet in preload
-1. add girl as sprite in create
-1. show single frame of girl in update
-1. add animation cells in create
-1. make girl walk in update
+1. __Blank screen:__
+    (`var game = new Phaser.Game(600, 480);`)
+1. __Create `GameState` object to hold template methods__ - init, preload, create, update
+1. __add GameState to game__ (`game.state.add`)
+1. __start GameState__ (`game.state.start`)
+1. __load spritesheet in preload__ (`this.load.spritesheet('sheetname', 'location', width, height, # of frames)`)
+1. __add girl as sprite in create__ (`this.girl = this.add.sprite(x, y, 'sheetname')`)
+1. __show single frame of girl in update__
+1. __add animation cells in create__ (`this.girl.animations.add('walk', [frame1, frame2], frames per second, true)`)
+1. __make girl walk in update__ (`this.girl.animations.play('walk')`)
