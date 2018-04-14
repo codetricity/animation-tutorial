@@ -1,6 +1,6 @@
 ## What We're Building
 
-https://codetricity.github.io/animation-tutorial/
+https://codetricity.github.io/animation-tutorial/lesson01.html
 
 ## Steps
 
