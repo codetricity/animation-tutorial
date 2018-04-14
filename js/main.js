@@ -8,7 +8,7 @@ var GameState = {
     },
 
     preload: function(){
-        this.load.spritesheet('girlSheet', 'assets/sprite-single-row.png', 46, 48);
+        this.load.spritesheet('girlSheet', 'assets/lesson01/sprite-single-row.png', 46, 48);
     },
 
     create: function(){
