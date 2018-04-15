@@ -11,6 +11,16 @@ Walking
 
 ![](img/screenshot-walking.png)
 
+## Concepts for Review
+
+
+|  Concept              | Category          |    Example       |
+|    --------------    | -----------       |    -------------- |
+| Create object from constructor | JavaScript | `var game = new Phaser.Game(600, 480);`
+| Define object | JavaScript |  `var GameState = { }` |
+| Create method | JavaScript | `init: function(){ }` |
+| Add game state | Phaser    | `game.state.add('GameState', GameState);` |    
+
 
 ## Steps
 
@@ -26,3 +36,8 @@ Walking
 1. __show single frame of girl in update__
 1. __add animation cells in create__ (`this.girl.animations.add('walk', [frame1, frame2], frames per second, true)`)
 1. __make girl walk in update__ (`this.girl.animations.play('walk')`)
+
+## Additional
+
+
+
