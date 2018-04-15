@@ -11,7 +11,7 @@ Walking
 
 ![](img/screenshot-walking.png)
 
-[Demo](https://github.com/codetricity/animation-tutorial.git)
+[Demo](https://codetricity.github.io/animation-tutorial/lesson02.html)
 
 ## Concepts for Review
 
