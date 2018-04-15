@@ -8,14 +8,15 @@ var GameState = {
     },
 
     preload: function(){
-        this.load.spritesheet('girlSheet', 'assets/lesson01/sprite-single-row.png', 46, 48);
+        this.load.spritesheet('girlSheet', 'assets/lesson02/girl-side-front_75x93x8.png', 75, 93);
     },
 
     create: function(){
         this.girl = this.add.sprite(300, 200, 'girlSheet');
+ 
         this.girl.anchor.setTo(0.5);
         this.game.physics.arcade.enable(this.girl);
-        this.walk = this.girl.animations.add('walk', [0, 1, 2, 3, 4], 8, true);
+        this.walk = this.girl.animations.add('walk', [0, 1, 2, 3], 8, true);
     },
 
     update: function(){

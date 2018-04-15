@@ -1,16 +1,10 @@
-## What We're Building
+# Girl Coder Animation Tutorial
 
-https://codetricity.github.io/animation-tutorial/
+## Lesson 1
 
-## Steps
+- [directions](docs/lesson01/README.md)
+- [demo](https://codetricity.github.io/animation-tutorial/lesson01.html)
 
-1. Blank screen
-    `var game = new Phaser.Game(600, 480);`
-1. Create `GameState` object to hold template methods - init, preload, create, update
-1. add GameState to game (`game.state.add`)
-1. start GameState (`game.state.start`)
-1. load spritesheet in preload
-1. add girl as sprite in create
-1. show single frame of girl in update
-1. add animation cells in create
-1. make girl walk in update
+## Lesson 2
+- [Directions](docs/lesson02/README.md)
+- [demo](https://codetricity.github.io/animation-tutorial/lesson02.html)
