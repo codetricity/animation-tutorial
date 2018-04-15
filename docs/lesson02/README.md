@@ -37,6 +37,8 @@ Walking
 1. __add animation cells in create__ (`this.girl.animations.add('walk', [frame1, frame2], frames per second, true)`)
 1. __make girl walk in update__ (`this.girl.animations.play('walk')`)
 
+## Extra
 
+- [flappy bird]()
 
 
