@@ -5,17 +5,19 @@ var GameState = {
         this.game.physics.startSystem(Phaser.Physics.ARCADE);
         this.cursors = this.game.input.keyboard.createCursorKeys();
         this.direction = "stop";
+        this.speed = 200;
     },
 
     preload: function(){
-        this.load.spritesheet('girlSheet', 'assets/lesson01/sprite-single-row.png', 46, 48);
+        this.load.spritesheet('birdSheet', 'assets/02_bird_75x50x8.png', 75, 50);
     },
 
     create: function(){
-        this.girl = this.add.sprite(300, 200, 'girlSheet');
-        this.girl.anchor.setTo(0.5);
-        this.game.physics.arcade.enable(this.girl);
-        this.walk = this.girl.animations.add('walk', [0, 1, 2, 3, 4], 8, true);
+        this.bird = this.add.sprite(300, 200, 'birdSheet');
+ 
+        this.bird.anchor.setTo(0.5);
+        this.game.physics.arcade.enable(this.bird);
+        this.walk = this.bird.animations.add('walk',[0, 1, 2, 3, 4, 5, 6, 7], 20, true);
     },
 
     update: function(){
@@ -31,18 +33,20 @@ var GameState = {
         }
 
         if (this.direction == "left") {
-            this.girl.body.velocity.x = -100;
-            this.girl.scale.setTo(1, 1);
+            this.bird.body.velocity.x = -this.speed;
+            this.bird.scale.setTo(-1, 1);
 
-            this.girl.animations.play('walk');
+
+
+            this.bird.animations.play('walk');
 
         } else if (this.direction == "right") {
-            this.girl.body.velocity.x = 100;
-            this.girl.scale.setTo(-1, 1);
-            this.girl.animations.play('walk');
+            this.bird.body.velocity.x = this.speed;
+            this.bird.scale.setTo(1, 1);
+            this.bird.animations.play('walk');
         } else if (this.direction == "stop") {
-            this.girl.body.velocity.x = 0;
-            this.girl.frame = 5;
+            this.bird.body.velocity.x = 0;
+            this.bird.frame = 5;
         }
     }
 }
