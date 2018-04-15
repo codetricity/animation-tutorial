@@ -17,7 +17,10 @@ var GameState = {
  
         this.bird.anchor.setTo(0.5);
         this.game.physics.arcade.enable(this.bird);
-        this.walk = this.bird.animations.add('walk',[0, 1, 2, 3, 4, 5, 6, 7], 20, true);
+        this.walk = this.bird.animations.add('walk',
+            [0, 1, 2, 3, 
+            4, 5, 6, 7, 8, 9, 10, 11, 12,
+            13, 14, 15, 16, 17, 18, 19], 8, true);
     },
 
     update: function(){
