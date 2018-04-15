@@ -5,7 +5,7 @@ var GameState = {
         this.game.physics.startSystem(Phaser.Physics.ARCADE);
         this.cursors = this.game.input.keyboard.createCursorKeys();
         this.direction = "stop";
-        this.speed = 200;
+        this.speed = 100;
     },
 
     preload: function(){
@@ -20,7 +20,7 @@ var GameState = {
         this.walk = this.bird.animations.add('walk',
             [0, 1, 2, 3, 
             4, 5, 6, 7, 8, 9, 10, 11, 12,
-            13, 14, 15, 16, 17, 18, 19], 8, true);
+            13, 14, 15, 16, 17, 18, 19], 14, true);
     },
 
     update: function(){
@@ -37,15 +37,12 @@ var GameState = {
 
         if (this.direction == "left") {
             this.bird.body.velocity.x = -this.speed;
-            this.bird.scale.setTo(-1, 1);
-
-
-
+            this.bird.scale.setTo(1, 1);
             this.bird.animations.play('walk');
 
         } else if (this.direction == "right") {
             this.bird.body.velocity.x = this.speed;
-            this.bird.scale.setTo(1, 1);
+            this.bird.scale.setTo(-1, 1);
             this.bird.animations.play('walk');
         } else if (this.direction == "stop") {
             this.bird.body.velocity.x = 0;
