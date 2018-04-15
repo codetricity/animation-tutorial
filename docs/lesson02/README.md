@@ -40,5 +40,6 @@ Walking
 ## Extra
 
 - [flappy bird](https://codetricity.github.io/animation-tutorial/lessons/02/bird.html)
+- [flying bird](https://codetricity.github.io/animation-tutorial/lessons/03/)
 
 
