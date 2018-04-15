@@ -9,7 +9,7 @@ var GameState = {
     },
 
     preload: function(){
-        this.load.spritesheet('birdSheet', 'assets/02_bird_75x50x8.png', 75, 50);
+        this.load.spritesheet('birdSheet', 'assets/05-bird_120x157x20.png', 120, 157);
     },
 
     create: function(){
